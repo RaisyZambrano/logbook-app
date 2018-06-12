@@ -85,6 +85,7 @@ public class NoteServiceTest {
         notes.remove(note);
     }
 
+
     @Test
     public void itShouldAutomaticallyAddATimestampWhenSavingANote() {
         // arrange

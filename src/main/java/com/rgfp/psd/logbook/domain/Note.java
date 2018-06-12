@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @Entity
 @Data
 @Table(name = "notes")
+
 public class Note {
 
     @Id
@@ -23,4 +24,13 @@ public class Note {
     @Column(length=10000)
     private String content;
 
+
+
+  /*  public void setTimestamp(LocalDateTime now) {
+        this.timestamp = now;
+    }*/
+
+    public String getSumary() {
+        return this.getContent().substring(0,240);
+    }
 }
